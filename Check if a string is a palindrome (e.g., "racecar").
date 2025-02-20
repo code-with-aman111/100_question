@@ -1,0 +1,17 @@
+// Check if a string is a palindrome (e.g., "racecar").
+
+function palindrome(name){
+    for(let i=0;i<name.length;i++){
+        if(name[i]!==name[name.length-i-1]){
+            return false;
+        }
+    }
+    return true
+}
+const ser=palindrome("ama")
+if(ser){
+    console.log("palindrome")
+}
+else{
+    console.log("not palindrome")
+}
