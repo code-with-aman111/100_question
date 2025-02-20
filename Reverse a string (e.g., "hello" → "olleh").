@@ -1,0 +1,9 @@
+let Fname="ranvijay"
+let name=Fname.split('')
+for(let i =0;i<name.length/2;i++){
+    let temp=name[i];
+    name[i]= name[name.length-i-1]
+   name[name.length-i-1]=temp
+}
+Fname=name.join('')
+console.log(name)
