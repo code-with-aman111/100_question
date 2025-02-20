@@ -1,0 +1,8 @@
+let arr=[67,12,89,86,90,34]
+let x=-9999
+for(let i of arr){
+    if(x<i){
+        x=i
+    }
+}
+console.log(x)
