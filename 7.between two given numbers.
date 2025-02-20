@@ -1,0 +1,7 @@
+// Generate a random number between two given numbers.
+
+function randomnumber(a,b){
+    console.log(Math.floor(Math.random()*(b-a))+a)
+}
+
+randomnumber(2,15)
