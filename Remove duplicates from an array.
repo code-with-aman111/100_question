@@ -1,0 +1,8 @@
+let aman=[12,45,12,78,45,90,45]
+let arr=[]
+for(let i of aman){
+    if(!arr.includes(i)){
+        arr.push(i)
+    }
+}
+console.log(arr)
