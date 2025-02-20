@@ -1,0 +1,9 @@
+let name="ranvijay"
+name=name.split('')
+let cnt=0;
+name.filter((d)=>{
+    if(d==="a"||d==="e"||d==="i"||d==="o"||d==="u"){
+        cnt++;
+    }
+})
+console.log(cnt)
