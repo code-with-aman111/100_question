@@ -1,0 +1,7 @@
+// Find the longest word in a sentence.
+
+let sentance="aman is very good boy and have valuable life"
+ const val=sentance.split(" ").reduce((big,current)=>{
+   return current.length>big.length?current:big
+},"")
+console.log(val)
