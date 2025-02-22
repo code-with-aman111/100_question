@@ -1,0 +1,11 @@
+function isEmpty(obj){
+    if(obj.length){
+        console.log("empty object")
+    }
+    console.log("not empty")
+}
+
+const obj={
+    aman:4
+}
+isEmpty(obj)
