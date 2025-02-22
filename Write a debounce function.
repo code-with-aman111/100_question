@@ -1,0 +1,25 @@
+// Write a debounce function.
+
+// function debounce(fnc,tmlimit){
+//   let limit;
+//   return function(...args){
+//      clearTimeout(limit)
+//       limit=setTimeout(()=>{
+//     fnc.apply(this,args)
+//       },tmlimit)
+//   }
+// }
+const finddata=(arg)=>{
+    console.log(arg)
+}
+let limit;
+const finddebounce=function(...args){
+     clearTimeout(limit)
+     limit=setTimeout(()=>{
+    finddata.apply(this,args)
+      },5000)
+}
+
+finddebounce("a")
+finddebounce("b")
+finddebounce("c")
