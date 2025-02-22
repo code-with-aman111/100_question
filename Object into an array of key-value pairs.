@@ -1,0 +1,9 @@
+// Convert an object into an array of key-value pairs.
+const obj={
+    louki:4,
+    mircha:8,
+    tamatar:12,
+}
+
+const newArr=Object.entries(obj)
+console.log(newArr)
