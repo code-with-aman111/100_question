@@ -1,0 +1,10 @@
+Write a function to remove falsy values from an array 
+function detectfalsy(arr,i){
+    if(i>=arr.length) return;
+    if(arr[i]===false){
+        console.log(arr[i]+" yes it is here")
+    }
+    return detectfalsy(arr,i+1)
+}
+let arr = [false, null, 0, "", undefined, NaN];
+detectfalsy(arr,0)
