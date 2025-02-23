@@ -1,0 +1,41 @@
+// https://fakestoreapi.com/products
+
+
+async function fetchdatafnt(url) {
+    const cache = fetchdatafnt.cache || (fetchdatafnt.cache = new Map())
+
+    if (cache.has(url)) {
+        console.log("mil gya")
+        return new Promise(resolve => resolve(cache.get(url)))
+    }
+    try {
+        const response = await fetch(url)
+        if (!response.ok) {
+            console.log("it is not okk!")
+        }
+        const data_1 = await response.json()
+        cache.set(url, data_1)
+        return data_1
+    } catch (err) {
+        console.log(err)
+    }
+}
+
+fetchdatafnt("https://fakestoreapi.com/products")
+    .then((data) => {
+        console.log(data)
+    })
+    .catch((err) => {
+        console.log(err)
+    })
+
+setTimeout(() => {
+
+    fetchdatafnt("https://fakestoreapi.com/products")
+        .then((data) => {
+            console.log(data)
+        })
+        .catch((err) => {
+            console.log(err)
+        })
+}, 9000)
